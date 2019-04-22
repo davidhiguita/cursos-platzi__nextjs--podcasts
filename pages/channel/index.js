@@ -1,7 +1,8 @@
 import 'isomorphic-fetch';
 
-import Channel from '../../components/channel';
-import Clip from '../../components/clip';
+import ChannelsGrid from '../../components/channels-grid';
+import Layout from '../../components/layout';
+import Podcast from '../../components/podcast';
 
 import styles from './styles';
 
@@ -32,34 +33,29 @@ class ChannelPage extends React.Component {
         } = this.props;
 
         return (
-            <div className="channel">
-                <section className="channel__title">{channel.title}</section>
-                <section className="channel__content">
-                    <section className="channel__childs">
-                        {series.map(serie => (
-                            <Channel key={serie.id} channel={serie} />
-                        ))}
+            <Layout
+                headerTitle={channel.title}
+                title="channel"
+            >
+                <div className="channel">
+                    <section className="channel__channels-list">
+                        {!!series.length && (
+                            <ChannelsGrid channels={series} />
+                        )}
                         {!series.length && (
                             <div className="not-found-info">Not childs found</div>
                         )}
                     </section>
-                    <section className="channel__clips">
+
+                    <section className="channel__audios-list">
                         {clips.map(clip => (
-                            <Clip key={clip.id} clip={clip} />
+                            <Podcast key={clip.id} podcast={clip} />
                         ))}
                     </section>
-                </section>
-    
-                <style jsx>{styles}</style>
-                <style jsx global>{`
-                    body {
-                        height: 100vh;
-                        margin: 0;
-                        padding: 0;
-                        width: 100vw;
-                    }
-                `}</style>
-            </div>
+        
+                    <style jsx>{styles}</style>
+                </div>
+            </Layout>
         );
     }
 }

@@ -22,6 +22,10 @@
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
+    ],
+    "/podcast": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

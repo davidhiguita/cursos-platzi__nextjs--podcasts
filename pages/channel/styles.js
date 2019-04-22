@@ -3,11 +3,10 @@ import css from 'styled-jsx/css';
 export default css`
     .channel {
         display: grid;
-        grid-template-areas: "title"
-                             "content";
-        grid-template-columns: 1fr;
-        grid-template-rows: 60px 1fr;
-        height: 100vh;
+        grid-template-areas: "channels audios";
+        grid-template-columns: 1fr 250px;
+        grid-template-rows: 1fr;
+        height: calc(100vh - 60px);
     }
 
     .channel__title {
@@ -21,41 +20,26 @@ export default css`
         justify-content: center;
     }
 
-    .channel__content {
-        display: grid;
-        grid-area: content;
-        grid-template-areas: "childs"
-                             "childs"
-                             "clips";
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+    .channel__channels-list {
+        grid-area: channels;
         overflow-y: auto;
+        position: relative;
     }
 
-    .channel__childs {
-        box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5);
-        display: grid;
-        grid-area: childs;
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-        grid-template-rows: 1fr;
+    .channel__audios-list {
+        border-left: solid 2px lightgray;
+        grid-area: audios;
         overflow-y: auto;
-    }
-
-    .channel__clips {
-        box-sizing: border-box;
-        display: grid;
-        grid-area: clips;
-        grid-gap: 15px;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-template-rows: minmax(100px, 1fr);
-        grid-auto-rows: minmax(100px, 1fr);
-        overflow-y: auto;
-        padding: 15px;
+        position: relative;
     }
 
     .not-found-info {
+        align-items: center;
+        color: gray;
         display: flex;
         font-size: 1.8rem;
         font-weight: bold;
+        height: 100%;
+        justify-content: center;
     }
 `;

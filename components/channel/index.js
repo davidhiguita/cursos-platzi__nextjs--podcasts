@@ -1,9 +1,16 @@
-import Link from 'next/link';
+import { Link } from '../../routes';
+import slug from '../../helpers/slug';
 
 import styles from './styles';
 
 const Channel = ({ channel }) => (
-    <Link href={`/channel?id=${channel.id}`}>
+    <Link
+        route="channel"
+        params={{
+            id: channel.id,
+            slug: slug(channel.title)
+        }}
+    >
         <a className="channel">
             <div className="channel__image">
                 <img src={channel.urls.logo_image.original} alt="channel" />

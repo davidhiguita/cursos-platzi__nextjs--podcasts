@@ -1,8 +1,17 @@
-import Link from 'next/link';
+import { Link } from '../../routes';
+import slug from '../../helpers/slug';
 import styles from './styles';
 
 const Podcast = ({ podcast }) => (
-    <Link href={`/podcast?id=${podcast.id}`}>
+    <Link
+        route="podcast"
+        params={{
+            idChannel: podcast.channel.id,
+            slugChannel: slug(podcast.channel.title),
+            id: podcast.id,
+            slug: slug(podcast.title)
+        }}
+    >
         <a className="podcast">
             <div className="podcast__title">{podcast.title}</div>
             <div className="podcast__duration">

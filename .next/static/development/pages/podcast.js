@@ -12065,7 +12065,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/davidhiguita/Documents/dev/study/platzi/nextjs/podcasts/pages/podcast/index.js";
 
 
 
@@ -12087,81 +12086,32 @@ function (_React$PureComponent) {
     key: "render",
     value: function render() {
       var audio_clip = this.props.audio_clip;
-      console.log({
-        audio_clip: audio_clip
-      });
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
         headerTitle: audio_clip.title,
-        title: audio_clip.title,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 18
-        },
-        __self: this
+        title: audio_clip.title
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "podcast-page",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 22
-        },
-        __self: this
+        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "podcast-page"
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "podcast-page__image",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 23
-        },
-        __self: this
+        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "podcast-page__image"
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
         src: audio_clip.channel.urls.logo_image.original,
         alt: audio_clip.title,
-        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash),
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        },
-        __self: this
+        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash)
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "podcast-page__description",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26
-        },
-        __self: this
+        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "podcast-page__description"
       }, audio_clip.description), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "podcast-page__channel",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
+        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "podcast-page__channel"
       }, audio_clip.channel.title), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "podcast-page__audio",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32
-        },
-        __self: this
+        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash) + " " + "podcast-page__audio"
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("audio", {
         controls: true,
         autoPlay: true,
-        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash),
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
+        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash)
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("source", {
         src: audio_clip.urls.high_mp3,
-        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash),
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 34
-        },
-        __self: this
+        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash)
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        id: _styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash,
-        __self: this
+        id: _styles__WEBPACK_IMPORTED_MODULE_11__["default"].__hash
       }, _styles__WEBPACK_IMPORTED_MODULE_11__["default"])));
     }
   }], [{
@@ -12232,7 +12182,7 @@ _defaultExport.__hash = "3207727872";
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!***********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpodcast&absolutePagePath=%2FUsers%2Fdavidhiguita%2FDocuments%2Fdev%2Fstudy%2Fplatzi%2Fnextjs%2Fpodcasts%2Fpages%2Fpodcast%2Findex.js ***!
   \***********************************************************************************************************************************************************************************/
@@ -12255,5 +12205,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=podcast.js.map

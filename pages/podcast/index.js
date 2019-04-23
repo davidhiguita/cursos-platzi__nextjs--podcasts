@@ -12,7 +12,6 @@ export default class Podcast extends React.PureComponent {
 
     render() {
         const { audio_clip } = this.props;
-        console.log({ audio_clip });
 
         return (
             <Layout

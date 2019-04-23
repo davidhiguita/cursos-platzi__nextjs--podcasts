@@ -13,7 +13,7 @@ export default css`
 
     .layout__header {
         align-items: center;
-        background-color: #1e88e5;
+        background-color: #ff9800;
         display: flex;
         grid-area: layout-header;
         justify-content: center;

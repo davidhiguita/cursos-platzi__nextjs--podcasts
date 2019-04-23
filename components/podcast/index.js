@@ -1,26 +1,21 @@
-import { Link } from '../../routes';
+// import { Link } from '../../routes';
+// import Link from 'next/link';
 import slug from '../../helpers/slug';
 import styles from './styles';
 
-const Podcast = ({ podcast }) => (
-    <Link
-        route="podcast"
-        params={{
-            idChannel: podcast.channel.id,
-            slugChannel: slug(podcast.channel.title),
-            id: podcast.id,
-            slug: slug(podcast.title)
-        }}
+const Podcast = ({ onClick, podcast }) => (
+    <a
+        className="podcast"
+        // href={`/${slug(podcast.channel.title)}.${podcast.channel.id}/${slug(podcast.title)}.${podcast.id}`}
+        onClick={onClick(podcast)}
     >
-        <a className="podcast">
-            <div className="podcast__title">{podcast.title}</div>
-            <div className="podcast__duration">
-                {Math.floor(podcast.duration / 60)}m
-            </div>
+        <div className="podcast__title">{podcast.title}</div>
+        <div className="podcast__duration">
+            {Math.floor(podcast.duration / 60)}m
+        </div>
 
-            <style jsx>{styles}</style>
-        </a>
-    </Link>
+        <style jsx>{styles}</style>
+    </a>
 );
 
 export default Podcast;

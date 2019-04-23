@@ -244,6 +244,84 @@ _defaultExport.__hash = "3875451999";
 
 /***/ }),
 
+/***/ "./components/modal-podcast/index.js":
+/*!*******************************************!*\
+  !*** ./components/modal-podcast/index.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-fetch */ "./node_modules/isomorphic-fetch/fetch-npm-browserify.js");
+/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_fetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/layout */ "./components/layout/index.js");
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles */ "./components/modal-podcast/styles.js");
+
+
+
+
+
+
+var ModalPodcast = function ModalPodcast(_ref) {
+  var audio_clip = _ref.audio_clip,
+      onClose = _ref.onClose;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    headerTitle: audio_clip.title,
+    title: audio_clip.title
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash) + " " + "modal-podcast"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    onClick: onClose,
+    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash) + " " + "modal-podcast__close-button"
+  }, "Close"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash) + " " + "modal-podcast__image"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    src: audio_clip.channel.urls.logo_image.original,
+    alt: audio_clip.title,
+    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash)
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash) + " " + "modal-podcast__description"
+  }, audio_clip.description), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash) + " " + "modal-podcast__channel"
+  }, audio_clip.channel.title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash) + " " + "modal-podcast__audio"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("audio", {
+    controls: true,
+    autoPlay: true,
+    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash)
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("source", {
+    src: audio_clip.urls.high_mp3,
+    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash)
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: _styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash
+  }, _styles__WEBPACK_IMPORTED_MODULE_4__["default"])));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ModalPodcast);
+
+/***/ }),
+
+/***/ "./components/modal-podcast/styles.js":
+/*!********************************************!*\
+  !*** ./components/modal-podcast/styles.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var _defaultExport = new String(".modal-podcast.jsx-3760478570{display:grid;grid-template-areas:\"image\" \"description\" \"channel\" \"audio\";grid-template-columns:1fr;grid-template-rows:350px 180px 100px;left:0;position:fixed;top:0;z-index:10;}.modal-podcast__image.jsx-3760478570{grid-area:image;}.modal-podcast__close-button.jsx-3760478570{background-color:rgba(0,0,0,0.5);border-radius:5px;color:white;cursor:pointer;left:10px;padding:10px;position:absolute;top:10px;}.modal-podcast__image.jsx-3760478570 img.jsx-3760478570{height:100%;width:100%;}.modal-podcast__description.jsx-3760478570{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;boz-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:1.2rem;grid-area:description;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;overflow-y:auto;padding:20px;}.modal-podcast__channel.jsx-3760478570{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;boz-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:2rem;font-weight:bold;grid-area:channel;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:20px;}.modal-podcast__audio.jsx-3760478570{bottom:2px;grid-area:audio;left:2px;position:fixed;width:100%;}.modal-podcast__audio.jsx-3760478570 audio.jsx-3760478570{width:100%;}");
+
+_defaultExport.__hash = "3760478570";
+/* harmony default export */ __webpack_exports__["default"] = (_defaultExport);
+
+/***/ }),
+
 /***/ "./components/podcast/index.js":
 /*!*************************************!*\
   !*** ./components/podcast/index.js ***!
@@ -257,35 +335,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../routes */ "./routes.js");
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_routes__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _helpers_slug__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../helpers/slug */ "./helpers/slug.js");
-/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles */ "./components/podcast/styles.js");
+/* harmony import */ var _helpers_slug__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/slug */ "./helpers/slug.js");
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles */ "./components/podcast/styles.js");
 
 
-
+// import { Link } from '../../routes';
+// import Link from 'next/link';
 
 
 
 var Podcast = function Podcast(_ref) {
-  var podcast = _ref.podcast;
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_routes__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    route: "podcast",
-    params: {
-      idChannel: podcast.channel.id,
-      slugChannel: Object(_helpers_slug__WEBPACK_IMPORTED_MODULE_3__["default"])(podcast.channel.title),
-      id: podcast.id,
-      slug: Object(_helpers_slug__WEBPACK_IMPORTED_MODULE_3__["default"])(podcast.title)
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash) + " " + "podcast"
+  var onClick = _ref.onClick,
+      podcast = _ref.podcast;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    // href={`/${slug(podcast.channel.title)}.${podcast.channel.id}/${slug(podcast.title)}.${podcast.id}`}
+    onClick: onClick(podcast),
+    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_3__["default"].__hash) + " " + "podcast"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash) + " " + "podcast__title"
+    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_3__["default"].__hash) + " " + "podcast__title"
   }, podcast.title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash) + " " + "podcast__duration"
+    className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_3__["default"].__hash) + " " + "podcast__duration"
   }, Math.floor(podcast.duration / 60), "m"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: _styles__WEBPACK_IMPORTED_MODULE_4__["default"].__hash
-  }, _styles__WEBPACK_IMPORTED_MODULE_4__["default"])));
+    id: _styles__WEBPACK_IMPORTED_MODULE_3__["default"].__hash
+  }, _styles__WEBPACK_IMPORTED_MODULE_3__["default"]));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Podcast);
@@ -301,9 +373,9 @@ var Podcast = function Podcast(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var _defaultExport = new String(".podcast.jsx-29478348{-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;border-bottom:solid 1px gray;box-sizing:border-box;color:black;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:80px;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:10px;-webkit-text-decoration:none;text-decoration:none;}.podcast__title.jsx-29478348{font-weight:bold;}.podcast__duration.jsx-29478348{-webkit-align-self:flex-end;-ms-flex-item-align:end;align-self:flex-end;background-color:#6ab7ff;border:solid 1px #6ab7ff;border-radius:10px;color:white;padding:3px;}");
+var _defaultExport = new String(".podcast.jsx-1830235008{-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;border-bottom:solid 1px gray;box-sizing:border-box;color:black;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:80px;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:10px;-webkit-text-decoration:none;text-decoration:none;}.podcast.jsx-1830235008:hover{cursor:pointer;}.podcast__title.jsx-1830235008{font-weight:bold;}.podcast__duration.jsx-1830235008{-webkit-align-self:flex-end;-ms-flex-item-align:end;align-self:flex-end;background-color:#6ab7ff;border:solid 1px #6ab7ff;border-radius:10px;color:white;padding:3px;}");
 
-_defaultExport.__hash = "29478348";
+_defaultExport.__hash = "1830235008";
 /* harmony default export */ __webpack_exports__["default"] = (_defaultExport);
 
 /***/ }),
@@ -779,6 +851,36 @@ function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
 }
 
 /***/ }),
@@ -13020,17 +13122,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! isomorphic-fetch */ "./node_modules/isomorphic-fetch/fetch-npm-browserify.js");
-/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(isomorphic_fetch__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _components_channels_grid__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../components/channels-grid */ "./components/channels-grid/index.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../components/layout */ "./components/layout/index.js");
-/* harmony import */ var _components_podcast__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../components/podcast */ "./components/podcast/index.js");
-/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./styles */ "./pages/channel/styles.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! isomorphic-fetch */ "./node_modules/isomorphic-fetch/fetch-npm-browserify.js");
+/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(isomorphic_fetch__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _components_channels_grid__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../components/channels-grid */ "./components/channels-grid/index.js");
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../components/layout */ "./components/layout/index.js");
+/* harmony import */ var _components_podcast__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../components/podcast */ "./components/podcast/index.js");
+/* harmony import */ var _components_modal_podcast__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../components/modal-podcast */ "./components/modal-podcast/index.js");
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./styles */ "./pages/channel/styles.js");
 
 
 
@@ -13040,7 +13145,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/davidhiguita/Documents/dev/study/platzi/nextjs/podcasts/pages/channel/index.js";
+
+
+
 
 
 
@@ -13052,78 +13159,73 @@ var _jsxFileName = "/Users/davidhiguita/Documents/dev/study/platzi/nextjs/podcas
 var ChannelPage =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_8__["default"])(ChannelPage, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_9__["default"])(ChannelPage, _React$Component);
 
   function ChannelPage() {
+    var _getPrototypeOf2;
+
+    var _this;
+
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_4__["default"])(this, ChannelPage);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__["default"])(ChannelPage).apply(this, arguments));
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__["default"])(ChannelPage)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__["default"])(_this), "state", {
+      activePodcast: null
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_10__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_8__["default"])(_this), "handleOpenPodcast", function (podcast) {
+      return function (event) {
+        event.preventDefault();
+
+        _this.setState({
+          activePodcast: podcast
+        });
+      };
+    });
+
+    return _this;
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_5__["default"])(ChannelPage, [{
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       var _this$props = this.props,
           channel = _this$props.channel,
           clips = _this$props.clips,
           series = _this$props.series;
-      return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      var activePodcast = this.state.activePodcast;
+      return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_15__["default"], {
         headerTitle: channel.title,
-        title: "channel",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
-        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_15__["default"].__hash) + " " + "channel",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("section", {
-        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_15__["default"].__hash) + " " + "channel__channels-list",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: this
-      }, !!series.length && react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_channels_grid__WEBPACK_IMPORTED_MODULE_12__["default"], {
-        channels: series,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
-        },
-        __self: this
-      }), !series.length && react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("div", {
-        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_15__["default"].__hash) + " " + "not-found-info",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 46
-        },
-        __self: this
-      }, "Not childs found")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("section", {
-        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_15__["default"].__hash) + " " + "channel__audios-list",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 50
-        },
-        __self: this
+        title: "channel"
+      }, activePodcast && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_components_modal_podcast__WEBPACK_IMPORTED_MODULE_17__["default"], {
+        audio_clip: activePodcast,
+        onClose: this.handleOpenPodcast(null)
+      }), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_18__["default"].__hash) + " " + "channel"
+      }, react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("section", {
+        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_18__["default"].__hash) + " " + "channel__channels-list"
+      }, !!series.length && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_components_channels_grid__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        channels: series
+      }), !series.length && react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_18__["default"].__hash) + " " + "not-found-info"
+      }, "Not childs found")), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("section", {
+        className: "jsx-".concat(_styles__WEBPACK_IMPORTED_MODULE_18__["default"].__hash) + " " + "channel__audios-list"
       }, clips.map(function (clip) {
-        return react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_components_podcast__WEBPACK_IMPORTED_MODULE_14__["default"], {
+        return react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(_components_podcast__WEBPACK_IMPORTED_MODULE_16__["default"], {
           key: clip.id,
-          podcast: clip,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 52
-          },
-          __self: this
+          onClick: _this2.handleOpenPodcast,
+          podcast: clip
         });
-      })), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_9___default.a, {
-        id: _styles__WEBPACK_IMPORTED_MODULE_15__["default"].__hash,
-        __self: this
-      }, _styles__WEBPACK_IMPORTED_MODULE_15__["default"])));
+      })), react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_11___default.a, {
+        id: _styles__WEBPACK_IMPORTED_MODULE_18__["default"].__hash
+      }, _styles__WEBPACK_IMPORTED_MODULE_18__["default"])));
     }
   }], [{
     key: "getInitialProps",
@@ -13189,7 +13291,7 @@ function (_React$Component) {
   }]);
 
   return ChannelPage;
-}(react__WEBPACK_IMPORTED_MODULE_10___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_12___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (ChannelPage);
 
@@ -13227,7 +13329,7 @@ routes.add('index').add('channel', '/:slug.:id', 'channel').add('podcast', '/:sl
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!***********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fchannel&absolutePagePath=%2FUsers%2Fdavidhiguita%2FDocuments%2Fdev%2Fstudy%2Fplatzi%2Fnextjs%2Fpodcasts%2Fpages%2Fchannel%2Findex.js ***!
   \***********************************************************************************************************************************************************************************/
@@ -13250,5 +13352,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=channel.js.map

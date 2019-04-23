@@ -14,6 +14,10 @@ export default css`
         text-decoration: none;
     }
 
+    .podcast:hover {
+        cursor: pointer;
+    }
+
     .podcast__title {
         font-weight: bold;
     }

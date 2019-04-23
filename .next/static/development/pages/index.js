@@ -13073,7 +13073,7 @@ routes.add('index').add('channel', '/:slug.:id', 'channel').add('podcast', '/:sl
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!******************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fdavidhiguita%2FDocuments%2Fdev%2Fstudy%2Fplatzi%2Fnextjs%2Fpodcasts%2Fpages%2Findex.js ***!
   \******************************************************************************************************************************************************************/
@@ -13096,5 +13096,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
